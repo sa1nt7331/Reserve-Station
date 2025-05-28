@@ -1,8 +1,6 @@
 ent-PartRodentiaBase = { ent-BasePart }
     .desc = { ent-BasePart.desc }
-ent-ChestRodentia = rodentia chest
-    .desc = { ent-PartRodentiaBase.desc }
-ent-GroinRodentia = rodentia groin
+ent-TorsoRodentia = rodentia torso
     .desc = { ent-PartRodentiaBase.desc }
 ent-HeadRodentia = rodentia head
     .desc = { ent-PartRodentiaBase.desc }

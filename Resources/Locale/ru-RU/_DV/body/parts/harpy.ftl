@@ -1,9 +1,3 @@
-ent-PartHarpyBase = { ent-BasePart }
-    .desc = { ent-BasePart.desc }
-ent-ChestHarpy = грудь гарпии
-    .desc = { ent-PartHarpyBase.desc }
-ent-GroinHarpy = пах гарпии
-    .desc = { ent-PartHarpyBase.desc }
 ent-PartHarpy = часть тела гарпии
     .desc = { ent-BaseItem.desc }
 ent-TorsoHarpy = торс гарпии

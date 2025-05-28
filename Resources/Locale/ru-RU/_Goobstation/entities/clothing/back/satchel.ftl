@@ -1,5 +1,3 @@
-ent-ClothingBackpackSatchelCentcomm = сумка centcomm
-    .desc = Дорогая темно-зеленая сумка. Пахнет факсом.
 ent-ClothingBackpackSatchelNanorep = сумка представителя нанотразен
     .desc = Дорогой темно-зеленый рюкзак. Пахнет факсом.
 ent-ClothingBackpackSatchelBlueshield = сумка офицера синего щита

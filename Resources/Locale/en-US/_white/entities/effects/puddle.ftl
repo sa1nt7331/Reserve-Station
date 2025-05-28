@@ -1,2 +1,2 @@
-ent-Footprint = footprint
-    .desc = Trace of liquid.
+ent-Footstep = footstep
+    .desc = Trace of liquid

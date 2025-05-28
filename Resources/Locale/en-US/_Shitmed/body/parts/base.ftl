@@ -1,6 +1,4 @@
 ent-BasePart = { ent-BasePartInorganic }
     .desc = { ent-BasePartInorganic.desc }
-ent-BaseChest = { ent-BaseChestInorganic }
-    .desc = { ent-BaseChestInorganic.desc }
-ent-BaseGroin = { ent-BaseGroinInorganic }
-    .desc = { ent-BaseGroinInorganic.desc }
+ent-BaseTorso = { ent-BaseTorsoInorganic }
+    .desc = { ent-BaseTorsoInorganic.desc }

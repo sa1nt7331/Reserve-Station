@@ -1,2 +1,2 @@
-ent-ActionPumpCursedHeart = действие-насос-сердце
-    .desc = действие-насос-сердце-описание
+ent-ActionPumpCursedHeart = action-pump-heart
+    .desc = action-pump-heart-desc

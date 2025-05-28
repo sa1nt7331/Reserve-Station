@@ -1,8 +1,6 @@
 ent-PartTajaran = Tajaran body part
     .desc = { ent-BaseItem.desc }
-ent-ChestTajaran = Tajaran chest
-    .desc = { ent-PartTajaran.desc }
-ent-GroinTajaran = Tajaran groin
+ent-TorsoTajaran = Tajaran torso
     .desc = { ent-PartTajaran.desc }
 ent-HeadTajaran = Tajaran head
     .desc = { ent-PartTajaran.desc }

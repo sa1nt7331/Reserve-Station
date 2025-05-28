@@ -1,10 +1,6 @@
-ent-SpawnVehicleSecway = Порождатель Secway
+ent-SpawnVehicleSecway = Secway Spawner
     .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleATV = Создатель квадроциклов
+ent-SpawnVehicleATV = ATV Spawner
     .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleJanicart = Создатель Янычар
-    .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleChairOfficeLight = создатель легкого офисного кресла
-    .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleChairOfficeDark = создатель темного офисного кресла
+ent-SpawnVehicleJanicart = Janicart Spawner
     .desc = { ent-MarkerBase.desc }

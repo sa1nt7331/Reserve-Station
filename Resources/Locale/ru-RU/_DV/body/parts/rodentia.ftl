@@ -1,9 +1,3 @@
-ent-PartRodentiaBase = { ent-BasePart }
-    .desc = { ent-BasePart.desc }
-ent-ChestRodentia = сундук для грызунов
-    .desc = { ent-PartRodentiaBase.desc }
-ent-GroinRodentia = пах грызуна
-    .desc = { ent-PartRodentiaBase.desc }
 ent-PartRodentia = часть тела грызуна
     .desc = { ent-BaseItem.desc }
 ent-TorsoRodentia = туловище грызуна

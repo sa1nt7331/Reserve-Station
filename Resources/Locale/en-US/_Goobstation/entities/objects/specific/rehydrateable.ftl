@@ -1,3 +1,5 @@
+ent-SkibidiCube = skibidi toilet cube
+    .desc = What a sigma?
 ent-HumanCube = human cube
     .desc = { ent-MonkeyCube.desc }
 ent-DionaCube = diona cube
@@ -25,6 +27,4 @@ ent-TajaranCube = tajaran cube
 ent-YowieCube = yowie cube
     .desc = { ent-MonkeyCube.desc }
 ent-VoxCube = vox cube
-    .desc = { ent-MonkeyCube.desc }
-ent-ShadowkinCube = Shadowkin cube
     .desc = { ent-MonkeyCube.desc }

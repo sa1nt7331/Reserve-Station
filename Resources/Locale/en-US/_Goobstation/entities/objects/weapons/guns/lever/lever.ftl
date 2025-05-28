@@ -1,2 +1,2 @@
 ent-WeaponLeverChester = Chester
-    .desc = An improved lever-action rifle designed to fire specialized 8 gauge ammunition for rapid threat removal.
+    .desc = Усовершенствованная винтовка с рычажным затвором, предназначенная для стрельбы специальными боеприпасами калибра .45 для быстрого устранения угроз.

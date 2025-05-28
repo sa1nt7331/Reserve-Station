@@ -4,8 +4,6 @@ guide-entry-rules-nrp = НРП правила
 # Goob SOP
 # - Основные справочники
 guide-entry-sop = СРП
-guide-entry-sm = Двигатель Суперматерии
-guide-entry-automation = Автоматизация
 guide-entry-sop-alert-levels = Коды станции
 guide-entry-sop-emergencies = Чрезвычайные ситуации
 guide-entry-sop-jobs = Профессии
@@ -66,8 +64,8 @@ guide-entry-sop-qm = КМ
 guide-entry-sop-atmostech = Атмос
 guide-entry-sop-stationengineer = Инженер
 # - Медицина
-guide-entry-sop-chemist = Химик
-guide-entry-sop-doctorintern = Врач
+guide-entry-sop-chemist = химик
+guide-entry-sop-doctorintern = Доктор/Интерн
 # - Science
 guide-entry-sop-roboticist = Роботехник
 # - Наука
@@ -86,6 +84,7 @@ guide-entry-sop-janitor = Уборщик
 guide-entry-sop-librarian = Библиотекарь
 guide-entry-sop-mime = Мим
 guide-entry-sop-reporter = Репортер
+guide-entry-chaplain = Священник
 # - Космический закон
 guide-entry-space-law-table = Таблица статей
 guide-entry-space-law-violations-minor = 1ХХ статьи (лёгкие)

@@ -1,8 +1,6 @@
 ent-PartAbductorBase = { ent-BasePart }
     .desc = { ent-BasePart.desc }
-ent-ChestAbductor = abductor chest
-    .desc = { ent-PartAbductorBase.desc }
-ent-GroinAbductor = abductor groin
+ent-TorsoAbductor = abductor torso
     .desc = { ent-PartAbductorBase.desc }
 ent-HeadAbductor = abductor head
     .desc = { ent-PartAbductorBase.desc }

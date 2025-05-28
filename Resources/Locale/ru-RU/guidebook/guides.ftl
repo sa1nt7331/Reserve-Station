@@ -59,6 +59,7 @@ guide-entry-voltagenetworks = Электросети
 guide-entry-generators = Генераторы
 guide-entry-portable-generator = Портативные генераторы
 # GoobStation - Supermatter
+guide-entry-sm = Двигатель суперматерии
 guide-entry-radio = Радиосвязь
 guide-entry-machine-upgrading = Улучшение оборудования
 guide-entry-cargo = Отдел снабжения

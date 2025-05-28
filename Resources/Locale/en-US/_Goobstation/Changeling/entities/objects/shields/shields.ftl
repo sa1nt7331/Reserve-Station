@@ -1,3 +1,3 @@
-ent-ChangelingShield = organic shield
+ent-ChangelingShield = oraganic shield
     .desc = A large, fleshy shield.
     .suffix = Unremoveable

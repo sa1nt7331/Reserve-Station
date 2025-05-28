@@ -1,8 +1,6 @@
 ent-PartKobold = { ent-BasePart }
     .desc = { ent-BasePart.desc }
-ent-ChestKobold = kobold chest
-    .desc = { ent-PartKobold.desc }
-ent-GroinKobold = kobold groin
+ent-TorsoKobold = kobold torso
     .desc = { ent-PartKobold.desc }
 ent-HeadKobold = kobold head
     .desc = { ent-PartKobold.desc }

@@ -34,5 +34,3 @@ ent-OrganDubiousGas = { ent-OrganDubiousBase }
     .desc = { ent-OrganDubiousBase.desc }
 ent-OrganDubiousSteptriggerImmune = { ent-OrganDubiousBase }
     .desc = { ent-OrganDubiousBase.desc }
-ent-OrganDubiousVentcrawler = { ent-OrganDubiousBase }
-    .desc = { ent-OrganDubiousBase.desc }

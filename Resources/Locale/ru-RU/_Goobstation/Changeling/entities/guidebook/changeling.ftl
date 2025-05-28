@@ -1,2 +1,2 @@
-ent-GuidebookChangelingFluff = путеводитель-перевертыш
-    .desc = вы не должны были видеть это в обычном режиме.
+ent-GuidebookChangelingFluff = guidebook changeling
+    .desc = you shouldn't be seeing this normally.

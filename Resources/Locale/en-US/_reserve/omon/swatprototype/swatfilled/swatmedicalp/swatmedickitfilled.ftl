@@ -1,3 +1,3 @@
-ent-MedkitCombatSwatFilled = OKG combat first aid kit
-    .desc = For combat missions and our lives, very heavy.
+ent-MedkitCombatSwatFilled = { ent-MedkitCombatSwat }
+    .desc = { ent-MedkitCombatSwat.desc }
     .suffix = Filled, Reserve

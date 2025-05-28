@@ -1,12 +1,12 @@
 ent-MobArachnidRandom = Урист МакВеб
     .suffix = Случайное появление
     .desc = { ent-MobArachnid.desc }
-ent-MobIPCRandom = Урист макпозитронный
+ent-MobIPCRandom = Urist McPositronic
     .suffix = Случайное появление
     .desc = { ent-MobIPC.desc }
 ent-MobOniRandom = Урист МакОни
     .suffix = Случайное появление
     .desc = { ent-MobOni.desc }
 ent-MobCluwneRandom = { ent-MobCluwne }
-    .suffix = Случайное появление
+    .suffix = Random Appearance
     .desc = { ent-MobCluwne.desc }

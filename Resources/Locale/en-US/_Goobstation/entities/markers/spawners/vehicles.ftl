@@ -4,7 +4,3 @@ ent-SpawnVehicleATV = ATV Spawner
     .desc = { ent-MarkerBase.desc }
 ent-SpawnVehicleJanicart = Janicart Spawner
     .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleChairOfficeLight = light office chair spawner
-    .desc = { ent-MarkerBase.desc }
-ent-SpawnVehicleChairOfficeDark = dark office chair spawner
-    .desc = { ent-MarkerBase.desc }
