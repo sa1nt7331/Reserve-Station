@@ -19,6 +19,9 @@ public sealed class DevilClausePrototype : IPrototype
     public int ClauseWeight;
 
     [DataField]
+    public string? Alias;
+
+    [DataField]
     public ComponentRegistry? AddedComponents;
 
     [DataField]

@@ -4,22 +4,22 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# The ID is what is searched for on the paper, coming after the target identifier.
-# Any spaces on the written portion will be removed, so keep it all lowercase and one word.
-
 - type: clause
   id: soulownership
   clauseWeight: 25
+  alias: "владение душой"
   event: !type:DevilContractSoulOwnershipEvent
 
 - type: clause
   id: weakness
   clauseWeight: -35
+  alias: "слабость"
   damageModifierSet: DevilDealPositive
 
 - type: clause
   id: fearoffire
   clauseWeight: -20
+  alias: "страх огня"
   damageModifierSet: HellSpawn
   addedComponents:
   - type: SpecialHighTempImmunity
@@ -27,12 +27,14 @@
 - type: clause
   id: brokeness
   clauseWeight: -20
+  alias: "нищета"
   spawnedItems:
   - ClothingShoesRealJordansAutographed
 
 - type: clause
   id: fearofdeath
   clauseWeight: -25
+  alias: "страх смерти"
   addedComponents:
   - type: MobThresholds
     thresholds:
@@ -43,18 +45,21 @@
 - type: clause
   id: fearoflight
   clauseWeight: -15
+  alias: "страх света"
   addedComponents:
   - type: FlashImmunity
 
 - type: clause
   id: fearofelectricity
   clauseWeight: -15
+  alias: "страх электричества"
   addedComponents:
   - type: Insulated
 
 - type: clause
   id: gluttony
   clauseWeight: -10
+  alias: "чревоугодие"
   removedComponents:
   - type: Hunger
   - type: Thirst
@@ -62,30 +67,35 @@
 - type: clause
   id: fearofdrowning
   clauseWeight: -10
+  alias: "страх утопления"
   addedComponents:
   - type: SpecialBreathingImmunity
 
 - type: clause
   id: fearofcrushing
   clauseWeight: -10
+  alias: "страх сдавливания"
   addedComponents:
   - type: SpecialPressureImmunity
 
 - type: clause
   id: fearoffreezing
   clauseWeight: -10
+  alias: "страх заморозки"
   addedComponents:
   - type: SpecialLowTempImmunity
 
 - type: clause
   id: greed
   clauseWeight: -10
+  alias: "жадность"
   spawnedItems:
   - SpaceCash30000
 
 - type: clause
   id: pain
   clauseWeight: -5
+  alias: "боль"
   addedComponents:
   - type: PainNumbness
   - type: SlowOnDamage
@@ -96,11 +106,13 @@
 - type: clause
   id: chance
   clauseWeight: -20
+  alias: "шанс"
   event: !type:DevilContractChanceEvent
 
 - type: clause
   id: shadows
   clauseWeight: -25
+  alias: "тени"
   addedComponents:
   - type: Stealth
   - type: StealthOnMove
@@ -108,28 +120,33 @@
 - type: clause
   id: humanity
   clauseWeight: 25
+  alias: "человечность"
   polymorph: MobFrogPolymorph
 
 - type: clause
   id: strength
   clauseWeight: 30
+  alias: "сила"
   damageModifierSet: DevilDealNegative
 
 - type: clause
   id: willtofight
   clauseWeight: 60
+  alias: "воля к борьбе"
   addedComponents:
   - type: Pacified
 
 - type: clause
   id: sight
   clauseWeight: 60
+  alias: "зрение"
   addedComponents:
   - type: PermanentBlindness
 
 - type: clause
   id: coherence
   clauseWeight: 30
+  alias: "связность"
   addedComponents:
   - type: BackwardsAccent
   - type: Clumsy
@@ -137,22 +154,26 @@
 - type: clause
   id: voice
   clauseWeight: 20
+  alias: "голос"
   addedComponents:
   - type: Muted
 
 - type: clause
   id: aleg
   clauseWeight: 30
+  alias: "нога"
   event: !type:DevilContractLoseLegEvent
 
 - type: clause
   id: ahand
   clauseWeight: 30
+  alias: "рука"
   event: !type:DevilContractLoseHandEvent
 
 - type: clause
   id: awake
   clauseWeight: 40
+  alias: "бодрствование"
   addedComponents:
   - type: Narcolepsy
     timeBetweenIncidents: 300, 600
@@ -161,23 +182,27 @@
 - type: clause
   id: anorgan
   clauseWeight: 45
+  alias: "орган"
   event: !type:DevilContractLoseOrganEvent
 
 - type: clause
   id: legs
   clauseWeight: 40
+  alias: "ноги"
   addedComponents:
   - type: LegsParalyzed
 
 - type: clause
   id: innerpeace
   clauseWeight: 5
+  alias: "внутренний покой"
   addedComponents:
   - type: TileMovement
 
 - type: clause
   id: death
   clauseWeight: -25
+  alias: "смерть"
   addedComponents:
   - type: CheatDeath
     reviveAmount: 1
@@ -185,6 +210,7 @@
 - type: clause
   id: mortality
   clauseWeight: -135
+  alias: "бессмертие"
   addedComponents:
   - type: CheatDeath
     infiniteRevives: true
@@ -192,6 +218,7 @@
 - type: clause
   id: time
   clauseWeight: 150
+  alias: "время"
   addedComponents:
   - type: DelayedDeath
     deathTime: 300

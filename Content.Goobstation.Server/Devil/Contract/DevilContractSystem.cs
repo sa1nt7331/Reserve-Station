@@ -264,14 +264,23 @@ public sealed partial class DevilContractSystem : EntitySystem
 
             var clauseKey = match.Groups["clause"].Value.Trim().ToLowerInvariant().Replace(" ", "");
 
-            if (!_prototypeManager.TryIndex(clauseKey, out DevilClausePrototype? clauseProto)
-                || !contract.Comp.CurrentClauses.Add(clauseProto))
+            var clauseProto = FindClauseByKeyOrAlias(clauseKey);
+            if (clauseProto == null || !contract.Comp.CurrentClauses.Add(clauseProto))
                 continue;
 
             newWeight += clauseProto.ClauseWeight;
         }
 
         contract.Comp.ContractWeight = newWeight;
+    }
+
+    private DevilClausePrototype? FindClauseByKeyOrAlias(string clauseKey)
+    {
+        if (_prototypeManager.TryIndex<DevilClausePrototype>(clauseKey, out var clauseProto))
+            return clauseProto;
+            
+        return _prototypeManager.EnumeratePrototypes<DevilClausePrototype>()
+            .FirstOrDefault(clause => clause.Alias?.ToLowerInvariant().Replace(" ", "") == clauseKey);
     }
 
     private void DoContractEffects(Entity<DevilContractComponent> contract, PaperComponent? paper = null)
@@ -301,7 +310,8 @@ public sealed partial class DevilContractSystem : EntitySystem
                 continue;
             }
 
-            if (!_prototypeManager.TryIndex(clauseKey, out DevilClausePrototype? clause))
+            var clause = FindClauseByKeyOrAlias(clauseKey);
+            if (clause == null)
             {
                 _sawmill.Warning($"Unknown contract clause: {clauseKey}");
                 continue;
