@@ -265,8 +265,8 @@ public sealed partial class DevilContractSystem : EntitySystem
 
             var clauseKey = match.Groups["clause"].Value.Trim().ToLowerInvariant().Replace(" ", "");
 
-            var clauseProto = FindClauseByKeyOrAlias(clauseKey);
-            if (clauseProto == null || !contract.Comp.CurrentClauses.Add(clauseProto))
+            var clauseProto = FindClauseByKeyOrAlias(clauseKey); // Reserve edit - localized devil clauses
+            if (clauseProto == null || !contract.Comp.CurrentClauses.Add(clauseProto)) // Reserve edit - localized devil clauses
                 continue;
 
             newWeight += clauseProto.ClauseWeight;
