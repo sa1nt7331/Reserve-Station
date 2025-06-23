@@ -275,6 +275,7 @@ public sealed partial class DevilContractSystem : EntitySystem
         contract.Comp.ContractWeight = newWeight;
     }
 
+    // Reserve edit begin
     private DevilClausePrototype? FindClauseByKeyOrAlias(string clauseKey)
     {
         if (_prototypeManager.TryIndex<DevilClausePrototype>(clauseKey, out var clauseProto))
@@ -283,7 +284,7 @@ public sealed partial class DevilContractSystem : EntitySystem
         return _prototypeManager.EnumeratePrototypes<DevilClausePrototype>()
             .FirstOrDefault(clause => clause.Alias?.ToLowerInvariant().Replace(" ", "") == clauseKey);
     }
-
+ // Reserve edit end
     private void DoContractEffects(Entity<DevilContractComponent> contract, PaperComponent? paper = null)
     {
         if (!Resolve(contract, ref paper))
