@@ -313,7 +313,7 @@ public sealed partial class DevilContractSystem : EntitySystem
             }
 
             var clause = FindClauseByKeyOrAlias(clauseKey); // Reserve edit
-            if (clause == null)
+            if (clause == null) // Reserve edit
             {
                 _sawmill.Warning($"Unknown contract clause: {clauseKey}");
                 continue;
