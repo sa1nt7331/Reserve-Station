@@ -6,6 +6,8 @@
 // SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 2025 sa1nt7331 <202271576+sa1nt7331@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 sa1nt7331 <havenz@yandex.ru>
 // SPDX-FileCopyrightText: 2025 sa1nt7331 <sa1nt7331@zaza.kyr>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
