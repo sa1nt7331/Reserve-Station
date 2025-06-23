@@ -21,6 +21,7 @@ public sealed class DevilClausePrototype : IPrototype
     [DataField(required: true)]
     public int ClauseWeight;
 
+    // Reserve edit - localized devil clauses
     [DataField]
     public string? Alias;
 
