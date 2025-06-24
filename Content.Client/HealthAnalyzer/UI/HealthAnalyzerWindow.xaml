@@ -23,7 +23,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
     MinWidth="650"
-    MinHeight="450"> <!-- Changed from 800x525 to 650x450 for more compact size -->
+    MinHeight="450"> <!-- Reserve - Changed from 800x525 to 650x450 for more compact size -->
     <BoxContainer Orientation="Vertical" VerticalExpand="True">
         <BoxContainer
             Orientation="Horizontal"
