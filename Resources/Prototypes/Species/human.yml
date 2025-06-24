@@ -77,13 +77,13 @@
       points: 1
       required: false
     Chest:
-      points: 3
+      points: 4 # Reserve
       required: false
     Legs:
-      points: 2
+      points: 6 # Reserve
       required: false
     Arms:
-      points: 2
+      points: 6 # Reserve
       required: false
 
 - type: humanoidBaseSprite

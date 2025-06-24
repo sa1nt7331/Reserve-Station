@@ -61,10 +61,10 @@
       points: 1
       required: false
     Legs:
-      points: 1
+      points: 4 # Reserve
       required: false
     Arms:
-      points: 1
+      points: 4 # Reserve
       required: false
     Snout:
       points: 1
@@ -74,7 +74,7 @@
       required: true
       defaultMarkings: [ VulpEar ]
     Overlay:
-      points: 2
+      points: 3 # Reserve
       required: false
 
 - type: humanoidBaseSprite
