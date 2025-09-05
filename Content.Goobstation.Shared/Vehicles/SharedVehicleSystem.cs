@@ -254,7 +254,11 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         if (vehicleComp.Driver != driver)
             return;
 
-        RemComp<RelayInputMoverComponent>(driver);
+        if (TryComp<RelayInputMoverComponent>(driver, out var relay))
+        {
+            if (relay.RelayEntity == vehicle)
+                RemComp<RelayInputMoverComponent>(driver);
+        }
 
         vehicleComp.Driver = null;
 
