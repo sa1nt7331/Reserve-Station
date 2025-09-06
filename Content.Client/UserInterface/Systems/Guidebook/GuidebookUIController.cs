@@ -225,7 +225,7 @@ public sealed class GuidebookUIController : UIController, IOnStateEntered<LobbyS
         if (GuidebookButton != null)
             GuidebookButton.SetClickPressed(!_guideWindow.IsOpen);
 
-        if (guides == null)
+        if (guides == null || guides.Count == 0)
         {
             guides = _prototypeManager.EnumeratePrototypes<GuideEntryPrototype>()
                 .ToDictionary(x => new ProtoId<GuideEntryPrototype>(x.ID), x => (GuideEntry) x);
