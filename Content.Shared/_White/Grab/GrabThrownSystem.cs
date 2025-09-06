@@ -77,11 +77,13 @@ public sealed class GrabThrownSystem : EntitySystem
 
     private void OnStopThrow(EntityUid uid, GrabThrownComponent comp, StopThrowEvent args)
     {
+        if (_netMan.IsClient)
+            return;
+
         if (comp.DamageOnCollide != null)
             _damageable.TryChangeDamage(uid, comp.DamageOnCollide);
 
-        if (HasComp<GrabThrownComponent>(uid))
-            RemComp<GrabThrownComponent>(uid);
+        RemComp<GrabThrownComponent>(uid);
     }
 
     /// <summary>
