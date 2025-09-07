@@ -70,7 +70,8 @@ namespace Content.Server.Speech.EntitySystems
             // All replaced words placed in the final message are placed here as dashes (___) with the same length.
             // The regex search goes through this buffer message, from which the already replaced words are crossed out,
             // ensuring that the replaced words cannot be replaced again.
-            var maskMessage = message;
+            var replacements = new Dictionary<char, char> { {'a','а'}, {'e','е'}, {'o','о'}, {'p','р'}, {'c','с'}, {'y','у'}, {'x','х'}, {'b','в'}, {'k','к'}, {'m','м'}, {'h','н'}, {'t','т'}, {'i','и'}, {'d','д'}};
+            var maskMessage = replacements.Aggregate(message.ToLowerInvariant(), (current, kvp) => current.Replace(kvp.Key, kvp.Value));
 
             foreach (var (first, replace) in prototype.WordReplacements)
             {
