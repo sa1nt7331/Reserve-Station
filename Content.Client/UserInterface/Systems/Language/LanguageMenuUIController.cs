@@ -21,7 +21,6 @@ namespace Content.Client.UserInterface.Systems.Language;
 public sealed class LanguageMenuUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>
 {
     public LanguageMenuWindow? LanguageWindow;
-    private MenuButton? LanguageButton => UIManager.GetActiveUIWidgetOrNull<MenuBar.Widgets.GameTopMenuBar>()?.LanguageButton;
 
     public void OnStateEntered(GameplayState state)
     {
@@ -30,16 +29,8 @@ public sealed class LanguageMenuUIController : UIController, IOnStateEntered<Gam
         LanguageWindow = UIManager.CreateWindow<LanguageMenuWindow>();
         LayoutContainer.SetAnchorPreset(LanguageWindow, LayoutContainer.LayoutPreset.CenterTop);
 
-        LanguageWindow.OnClose += () =>
-        {
-            if (LanguageButton != null)
-                LanguageButton.Pressed = false;
-        };
-        LanguageWindow.OnOpen += () =>
-        {
-            if (LanguageButton != null)
-                LanguageButton.Pressed = true;
-        };
+        LanguageWindow.OnClose += () => { }; // Reserve edit
+        LanguageWindow.OnOpen += () => { }; // Reserve edit
 
         CommandBinds.Builder.Bind(ContentKeyFunctions.OpenLanguageMenu,
             InputCmdHandler.FromDelegate(_ => ToggleWindow())).Register<LanguageMenuUIController>();
@@ -58,18 +49,10 @@ public sealed class LanguageMenuUIController : UIController, IOnStateEntered<Gam
 
     public void UnloadButton()
     {
-        if (LanguageButton == null)
-            return;
-
-        LanguageButton.OnPressed -= LanguageButtonPressed;
     }
 
     public void LoadButton()
     {
-        if (LanguageButton == null)
-            return;
-
-        LanguageButton.OnPressed += LanguageButtonPressed;
     }
 
     private void LanguageButtonPressed(ButtonEventArgs args)
@@ -82,8 +65,6 @@ public sealed class LanguageMenuUIController : UIController, IOnStateEntered<Gam
         if (LanguageWindow == null)
             return;
 
-        if (LanguageButton != null)
-            LanguageButton.SetClickPressed(!LanguageWindow.IsOpen);
 
         if (LanguageWindow.IsOpen)
             LanguageWindow.Close();

@@ -36,6 +36,15 @@
 #*.wwaproj   merge=binary
 Resources/Maps/**.yml merge=mapping-merge-driver
 
+**/FartSystem.cs merge=ours
+**/SharedFartSystem.cs merge=ours
+**/FartComponent.cs merge=ours
+**/Emotes/fart.png merge=ours
+**/fart*.yml merge=ours
+**/fart*.ftl merge=ours
+**/fart*.ogg merge=ours
+**/*Fart*.cs merge=ours
+
 ###############################################################################
 # behavior for image files
 #

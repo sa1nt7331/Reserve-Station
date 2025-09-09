@@ -182,6 +182,7 @@ namespace Content.Server.Database
 
             return bans;
         }
+        
         //Start-ADT-Tweak: логи банов для диса
         public override async Task<ServerBanDef?> GetLastServerBanAsync()
         {
@@ -412,6 +413,7 @@ namespace Content.Server.Database
 
             return await QueryRoleBans(query);
         }
+        
         //Start-ADT-Tweak: логи банов для диса
         public override async Task<ServerRoleBanDef?> GetLastServerRoleBanAsync()
         {
@@ -422,7 +424,7 @@ namespace Content.Server.Database
             return ConvertRoleBan(lastServerRoleBan);
         }
         //End-ADT-Tweak
-
+        
         private static async Task<List<ServerRoleBanDef>> QueryRoleBans(IQueryable<ServerRoleBan> query)
         {
             var queryRoleBans = await query.ToArrayAsync();

@@ -191,6 +191,7 @@ namespace Content.Server.Database
                 .Select(ConvertBan)
                 .Where(b => BanMatcher.BanMatches(b!, playerInfo))!;
         }
+        
         //Start-ADT-Tweak: логи банов для диса
         public override async Task<ServerBanDef?> GetLastServerBanAsync()
         {
@@ -294,6 +295,7 @@ namespace Content.Server.Database
                 .Select(ConvertRoleBan)
                 .ToList()!;
         }
+        
         //Start-ADT-Tweak: логи банов для диса
         public override async Task<ServerRoleBanDef?> GetLastServerRoleBanAsync()
         {

@@ -155,7 +155,6 @@
     - ActionJumpToCore
     - ActionSurvCameraLights
     - ActionAIViewLaws
-    - ActionAIToggleBolts # WD edit
     - ActionOpenRemoteDevicesMenu # Corvax-Next-AiRemoteControl
     - ActionOpenCameraWarpMenu # Goobstation-Ai-Camera-Jumping
   - type: UserInterface

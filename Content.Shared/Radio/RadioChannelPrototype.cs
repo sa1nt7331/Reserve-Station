@@ -60,4 +60,7 @@ public sealed partial class RadioChannelPrototype : IPrototype
 
     [DataField]
     public EntityWhitelist? ReceiveWhitelist = null;
+
+    [DataField("stealthChannel"), ViewVariables] // Reserve edit
+    public bool StealthChannel = false; // Reserve edit
 }

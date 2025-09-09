@@ -268,6 +268,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction MappingEnablePick = "MappingEnablePick";
         public static readonly BoundKeyFunction MappingEnableDelete = "MappingEnableDelete";
         public static readonly BoundKeyFunction MappingPick = "MappingPick";
+        public static readonly BoundKeyFunction MappingEnableDecalPick = "MappingEnableDecalPick"; // Reserve edit
         public static readonly BoundKeyFunction MappingRemoveDecal = "MappingRemoveDecal";
         public static readonly BoundKeyFunction MappingCancelEraseDecal = "MappingCancelEraseDecal";
         public static readonly BoundKeyFunction MappingOpenContextMenu = "MappingOpenContextMenu";

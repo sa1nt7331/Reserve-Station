@@ -212,7 +212,7 @@
       metabolismRate: 2.5
       effects:
       - !type:Emote
-        emote: Fart
+        emote: Sigh # Reserve edit
         showInChat: true
         showInGuidebook: true
         force: true

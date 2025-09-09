@@ -48,9 +48,6 @@ public sealed partial class ClowncarComponent : Component
     [DataField]
     public SoundSpecifier CannonDeactivateSound = new SoundPathSpecifier("/Audio/_Goobstation/Vehicle/Clowncar/clowncar_deactivate_cannon.ogg");
 
-    [ViewVariables(VVAccess.ReadWrite)]
-    [DataField]
-    public SoundSpecifier FartSound = new SoundPathSpecifier("/Audio/_Goobstation/Vehicle/Clowncar/clowncar_fart.ogg");
 
     [DataField]
     public SoundSpecifier ClownMusic =

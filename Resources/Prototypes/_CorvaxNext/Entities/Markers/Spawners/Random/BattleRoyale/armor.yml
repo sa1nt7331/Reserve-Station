@@ -50,9 +50,6 @@
       - id: ClothingOuterArmorRaid
       - id: ClothingOuterHardsuitSyndieMedic
       - id: ClothingOuterArmorHeretic
-      - id: ClothingOuterHardsuitVoxRaidersCombat
-      - id: ClothingOuterHardsuitVoxRaidersEngineer
-      - id: ClothingOuterHardsuitVoxRaidersMedical
     # Tier 4 - Epic (5%)
     - !type:GroupSelector
       weight: 5
@@ -66,7 +63,6 @@
       - id: ClothingOuterHardsuitERTSecurity
       - id: ClothingOuterHardsuitERTChaplain
       - id: ClothingOuterSuitSpaceNinja
-      - id: ClothingOuterHardsuitVoxRaidersStealth
     # Tier 5 - Fun (2%)
     - !type:GroupSelector
       weight: 2

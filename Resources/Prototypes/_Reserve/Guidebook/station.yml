@@ -55,6 +55,7 @@
   - Capoeira
   - Ninjutsu
   - DragonKungFu
+  - HellRip # Reserve edit
 
 - type: guideEntry
   id: CQC
@@ -90,3 +91,8 @@
   id: DragonKungFu
   name: guide-entry-dragon-kung-fu
   text: "/ServerInfo/_Reserve/Guidebook/MartialArts/DragonKungFu.xml"
+
+- type: guideEntry # Reserve edit
+  id: HellRip # Reserve edit
+  name: guide-entry-hell-rip # Reserve edit
+  text: "/ServerInfo/_Goobstation/Guidebook/MartialArts/HellRip.xml" # Reserve edit

@@ -672,6 +672,11 @@ namespace Content.Server.Database
 
         public abstract Task<ServerRoleBanDef> AddServerRoleBanAsync(ServerRoleBanDef serverRoleBan);
         public abstract Task AddServerRoleUnbanAsync(ServerRoleUnbanDef serverRoleUnban);
+        
+        //Start-ADT-Tweak: логи банов для диса // Reserve edit start
+        public abstract Task<ServerBanDef?> GetLastServerBanAsync();
+        public abstract Task<ServerRoleBanDef?> GetLastServerRoleBanAsync();
+        //End-ADT-Tweak // Reserve edit end
 
         public async Task EditServerRoleBan(int id, string reason, NoteSeverity severity, DateTimeOffset? expiration, Guid editedBy, DateTimeOffset editedAt)
         {

@@ -1752,4 +1752,7 @@
 - type: Tag
   id: XenoborgModuleStealth
 
+- type: Tag # Reserve edit
+  id: NoPaint # Reserve edit
+
 # ALPHABETICAL

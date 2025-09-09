@@ -202,7 +202,7 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateFoodPizzaLarge
+          id: CrateFoodPizza # Reserve edit
           weight: 1
       - !type:GroupSelector
         children:
@@ -227,7 +227,7 @@
       - !type:GroupSelector
         children:
         - !type:EntSelector
-          id: CrateFoodSoftdrinksLarge
+          id: CrateFoodSoftdrinks # Reserve edit
           weight: 1
         # Cargo - Fun
       - !type:GroupSelector
