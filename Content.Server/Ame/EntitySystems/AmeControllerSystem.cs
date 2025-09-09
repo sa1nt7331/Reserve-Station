@@ -152,8 +152,13 @@ public sealed class AmeControllerSystem : EntitySystem
                 var availableInject = Math.Min(controller.InjectionAmount, fuelContainer.FuelAmount);
                 var powerOutput = group.InjectFuel(availableInject, out var overloading);
                 if (TryComp<PowerSupplierComponent>(uid, out var powerOutlet))
-                    powerOutlet.MaxSupply = powerOutput*1000; // Reserve
+                    powerOutlet.MaxSupply = powerOutput;
+
                 fuelContainer.FuelAmount -= availableInject;
+
+                // Dirty for the sake of the AME fuel examine not mispredicting
+                Dirty(controller.FuelSlot.Item.Value, fuelContainer);
+
                 // only play audio if we actually had an injection
                 if (availableInject > 0)
                     _audioSystem.PlayPvs(controller.InjectSound, uid, AudioParams.Default.WithVolume(overloading ? 10f : 0f));
@@ -194,12 +199,12 @@ public sealed class AmeControllerSystem : EntitySystem
         if (TryGetAMENodeGroup(uid, out var group))
         {
             coreCount = group.CoreCount;
-            targetedPowerSupply = group.CalculatePower(controller.InjectionAmount, group.CoreCount);
+            targetedPowerSupply = group.CalculatePower(controller.InjectionAmount, group.CoreCount) / 1000;
         }
 
         // set current power statistics in kW
         float currentPowerSupply = 0;
-        if (TryComp<PowerSupplierComponent>(uid, out var powerOutlet) && coreCount > 0) // Reserve
+        if (TryComp<PowerSupplierComponent>(uid, out var powerOutlet) && coreCount > 0)
         {
             currentPowerSupply = powerOutlet.CurrentSupply / 1000;
         }
