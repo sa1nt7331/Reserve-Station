@@ -22,9 +22,9 @@
   - type: StaticPrice
     price: 3000
   - type: GrantCqc
-  - type: GuideHelp
-    guides:
-    - CQC
+  # - type: GuideHelp
+    # guides:
+    # - CQC
 
 - type: entity
   parent: [ BaseItem, BaseSyndicateContraband ]
@@ -42,9 +42,9 @@
   - type: StaticPrice
     price: 3000
   - type: GrantSleepingCarp
-  - type: GuideHelp
-    guides:
-    - SleepingCarp
+  # - type: GuideHelp
+    # guides:
+    # - SleepingCarp
 
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
@@ -61,6 +61,6 @@
   - type: StaticPrice
     price: 3000
   - type: GrantCapoeira
-  - type: GuideHelp
-    guides:
-    - Capoeira
+  # - type: GuideHelp
+    # guides:
+    # - Capoeira

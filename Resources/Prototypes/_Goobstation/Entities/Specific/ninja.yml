@@ -13,6 +13,6 @@
   - type: StaticPrice
     price: 3000
   - type: GrantNinjutsu
-  - type: GuideHelp
-    guides:
-    - Ninjutsu
+  # - type: GuideHelp
+    # guides:
+    # - Ninjutsu
