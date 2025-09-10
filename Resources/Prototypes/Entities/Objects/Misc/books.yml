@@ -459,9 +459,9 @@
       color: red
     - state: icon_wrench
     - state: overlay_blood
-  - type: GuideHelp
-    guides:
-    - SurvivalReserve # Reserve guidebook
+  # - type: GuideHelp
+    # guides:
+    # - SurvivalReserve # Reserve guidebook
 
 - type: entity
   id: BookChemicalCompendium

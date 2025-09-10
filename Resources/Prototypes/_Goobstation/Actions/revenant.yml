@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionRevenantHaunt
   name: Haunt
   description: Gives essence and stolen essence for every witness.
@@ -12,6 +13,7 @@
     event: !type:RevenantHauntActionEvent
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionRevenantBloodWriting
   name: Blood Writing
   description: Costs 2 Essence per glyph.
@@ -20,6 +22,7 @@
     event: !type:RevenantBloodWritingEvent
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionRevenantAnimate
   name: Animate
   description: Costs 50 Essence.

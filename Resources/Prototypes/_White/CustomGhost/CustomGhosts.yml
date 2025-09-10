@@ -14,7 +14,7 @@
 - type: customGhost
   id: xelitex-ghost
   ckey: localhost@_XeliteX_FFX_
-  sprite: /Textures/_Reserve/CustomGhosts/xelitex-ghost.rsi
+  sprite: _Reserve/CustomGhosts/xelitex-ghost.rsi
   alpha: 0.8
   ghostName: XeliteX
   ghostDescription: Очень странный призрак.

@@ -33,10 +33,10 @@
   children:
   - Traitors
   - CorporateAgents # Goobstation - Corporate Agents
-  - Changelings # Goobstation - changelings
+  # - Changelings # Goobstation - changelings
   - Heretics # Goobstation - heretics
   - Blob # Goobstation - Blob
-  - Wizard # Goobstation - Wizard
+  # - Wizard # Goobstation - Wizard
   - CosmicCult # DeltaV - Cosmic Cult
   - NuclearOperatives
   - Zombies

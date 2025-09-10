@@ -1,4 +1,5 @@
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiInfo
   name: View Information
   description: View the information of your chassis and station.
@@ -7,6 +8,7 @@
     event: !type:StationAiInfoActionEvent
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiRadar
   name: Mass Scanner Interface
   description: View a Mass Scanner Interface.
@@ -15,6 +17,7 @@
     event: !type:ToggleIntrinsicUIEvent { key: enum.RadarConsoleUiKey.Key }
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiCrewMonitoring
   name: Crew Monitoring Interface
   description: View a Crew Monitoring Interface.
@@ -23,6 +26,7 @@
     event: !type:ToggleIntrinsicUIEvent { key: enum.CrewMonitoringUIKey.Key }
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiStationRecords
   name: Station Records Interface
   description: View a Station Records Interface.
@@ -31,6 +35,7 @@
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiCommunications
   name: Communications Interface
   description: View a Communications Interface.
@@ -39,6 +44,7 @@
     event: !type:ToggleIntrinsicUIEvent { key: enum.CommunicationsConsoleUiKey.Key }
 
 - type: entity
+  parent: BaseAction # Reserve edit
   id: ActionStationAiAtmosphericAlerts
   name: Atmospheric Alerts
   description: View a Atmospheric Alerts Interface.
